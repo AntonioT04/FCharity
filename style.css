@@ -43,6 +43,7 @@ body {
     height: 510px;
     width: 728px;
     margin: 0 auto;
+    padding-top: 0;
   }
    
   /* Style each of the sides
@@ -65,16 +66,7 @@ body {
     animation: slide 10s ease infinite;
   }
 
-  .slide-wrapper2 {
-     
-    /* Calculate the total width on the
-      basis of number of slides */
-      width: calc(728px * 4);
-     
-    /* Specify the animation with the
-      duration and speed */
-      animation: slide 10s ease infinite;
-    }
+
 
 @keyframes slide {
    
