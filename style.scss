@@ -1,0 +1,127 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("images/booklogo.png");
+    min-height: 600px;
+  }
+  
+  .bgimg-2 {
+    background-image: url("https://i0.wp.com/whytoread.com/wp-content/uploads/2015/02/easy-to-read-classic-books.jpg?fit=1200%2C806&ssl=1");
+    min-height: 300px;
+  }
+  
+  .bgimg-3 {
+    background-image: url("images/mlk.png");
+    min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
+  
+  
+  a {  
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .donate {
+    background: #7ED957;
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.4) 100%), -webkit-linear-gradient(left, lighten(#7ED957, 15%) 0%, #7ED957 50%, lighten(#7ED957, 15%) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%),  linear-gradient(to right, lighten(#7ED957, 15%) 0%, #7ED957 50%, lighten(#7ED957, 15%) 100%);
+    background-position: 0 0;
+    background-size: 200% 100%;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px 65px 15px 15px;
+    text-shadow: 1px 1px 5px #666;
+    -webkit-transition: all 800ms;
+    transition: all 800ms;
+    
+    &:after {
+      border-left: 1px solid darken(#7ED957, 5%);
+      color: darken(#7ED957, 10%);
+      content: "\f004";
+      font: 20px "FontAwesome";
+      padding: 10px 0;
+      padding-left: 15px;
+      position: absolute;
+      right: 16px;
+      top: 7px;    
+      -webkit-transition: all 600ms 200ms;
+      transition: all 600ms 200ms;
+    }
+    
+    &:hover {
+      background-position: -100% 0;
+      
+      &:after {
+        border-left: 1px solid lighten(#7ED957, 5%);
+        color: #fff;
+        text-shadow: 0 0 10px #000;
+      }
+    }
+  }
+
+
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .address{
+    background-color: burlywood;
+    color: green;
+    
+    width: 200px;
+  }
